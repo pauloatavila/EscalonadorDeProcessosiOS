@@ -29,6 +29,7 @@ Alocação e liberação da memória
 ![alt text](imgDemo/info.gif "Informações do Processo")
 
 Informações do processo
+
 ![alt text](imgDemo/bloqueado.gif "Fila de Bloqueados")
 
 Informações do processo na fila de bloqueados
@@ -47,9 +48,11 @@ Informações sobre o que aconteceu em cada instante de tempo
 ![alt text](imgDemo/tempo.gif "Tempo médio de espera dos processos")
 
 Tempo médio de espera dos processos que foram executados
+
 ![alt text](imgDemo/fast.gif "Executar tudo de uma vez só")
 
 Executar toda o algoritmo para escalonar os processos de uma só vez
+
 ![alt text](imgDemo/reiniciar.gif "Reiniciar a execução dos processos")
 
 Reiniciar a execução
