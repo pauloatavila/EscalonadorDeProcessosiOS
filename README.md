@@ -14,7 +14,7 @@ Cada processo necessita de um espaço de memória para que seja executado, ou se
 A aplicação conta com 4 áreas, sendo elas:
 Memória, onde mostras as informações referentes a utilização da mesma pelos processos.
 Tabelas de Informação, que representam quais processos estão em cada fila, e ao pressionar um processo, abrem-se as informações detalhadas referentes a ele.
-Time-Line, que representa as execuções através do tempo.
+Time Line, que representa as execuções através do tempo.
 Log, que mostra detalhadamente tudo que aconteceu em cada instante de tempo.
 
 A execução pode ser acompanhada Setp by Step (Botão com uma seta), ou verificar todo o resultado de uma única vez (Botão de play).
@@ -22,28 +22,36 @@ Uma demostração ilustrativa pode ser acompanhada abaixo:
 
 **Memória - Alocação de Memória com Animação**
 ![alt text](imgDemo/memoria.gif "Memória")
+
 Alocação e liberação da memória
 
 **Tabelas de Filas**
 ![alt text](imgDemo/info.gif "Informações do Processo")
+
 Informações do processo
 ![alt text](imgDemo/bloqueado.gif "Fila de Bloqueados")
+
 Informações do processo na fila de bloqueados
 
-**Time-Line - Visualização com Gestos**
-![alt text](imgDemo/gestos.gif "Visualização da Time-Line")
+**Time Line - Visualização com Gestos**
+![alt text](imgDemo/gestos.gif "Visualização da Time Line")
+
 A Time Line conta também com legendas para algumas execuções, como quando o processo pede tempo para IOBound, em que aparece acima da execução um relógio, identificando que naquela execução foi que o processo solicitou IOBound. Temos o mesmo cenário para a finalização de execução do processos, em que é identificada com um sinal de *check*.
 
 **Log de Informações**
 ![alt text](imgDemo/log.gif "Log de Informações")
+
 Informações sobre o que aconteceu em cada instante de tempo
 
 **Extras - Tempo Médio de Espera, Executar Rápidamente, Reiniciar**
 ![alt text](imgDemo/tempo.gif "Tempo médio de espera dos processos")
+
 Tempo médio de espera dos processos que foram executados
 ![alt text](imgDemo/fast.gif "Executar tudo de uma vez só")
+
 Executar toda o algoritmo para escalonar os processos de uma só vez
 ![alt text](imgDemo/reiniciar.gif "Reiniciar a execução dos processos")
+
 Reiniciar a execução
 
 ## Processos
