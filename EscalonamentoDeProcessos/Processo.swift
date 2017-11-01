@@ -43,14 +43,14 @@ class Processo{
 class ProcessoDAO{
     static func getList() -> [Processo]{
         return [
-            Processo(nome: "P1", tempoBurst: 3, tempoBurstRestante: 3, memoria: 12, armazenamentoInicial: 0, armazenamentoFinal: 0, status: 1, prioridade: 4, ioBound: [1], tempoIO: 0, tempoEspera: 0, tempoChegada: 0, color:"642069"),
-            Processo(nome: "P2", tempoBurst: 5, tempoBurstRestante: 5, memoria: 20, armazenamentoInicial: 0, armazenamentoFinal: 0, status: 1, prioridade: 3, ioBound: [1], tempoIO: 0, tempoEspera: 0, tempoChegada: 1, color:"3EC218"),
+            Processo(nome: "P1", tempoBurst: 3, tempoBurstRestante: 3, memoria: 12, armazenamentoInicial: 0, armazenamentoFinal: 0, status: 1, prioridade: 4, ioBound: [2], tempoIO: 0, tempoEspera: 0, tempoChegada: 0, color:"642069"),
+            Processo(nome: "P2", tempoBurst: 5, tempoBurstRestante: 5, memoria: 20, armazenamentoInicial: 0, armazenamentoFinal: 0, status: 1, prioridade: 3, ioBound: [4], tempoIO: 0, tempoEspera: 0, tempoChegada: 1, color:"3EC218"),
             Processo(nome: "P3", tempoBurst: 4, tempoBurstRestante: 4, memoria: 18, armazenamentoInicial: 0, armazenamentoFinal: 0, status: 1, prioridade: 4, ioBound: [], tempoIO: 0, tempoEspera: 0, tempoChegada: 1, color:"4AA4C3"),
             Processo(nome: "P4", tempoBurst: 2, tempoBurstRestante: 2, memoria: 13, armazenamentoInicial: 0, armazenamentoFinal: 0, status: 1, prioridade: 1, ioBound: [], tempoIO: 0, tempoEspera: 0, tempoChegada: 1, color:"215EEB"),
             Processo(nome: "P5", tempoBurst: 7, tempoBurstRestante: 7, memoria: 9, armazenamentoInicial: 0, armazenamentoFinal: 0, status: 1, prioridade: 3, ioBound: [], tempoIO: 0, tempoEspera: 0, tempoChegada: 2, color:"A23022"),
-            Processo(nome: "P6", tempoBurst: 8, tempoBurstRestante: 8, memoria: 31, armazenamentoInicial: 0, armazenamentoFinal: 0, status: 1, prioridade: 4, ioBound: [1], tempoIO: 0, tempoEspera: 0, tempoChegada: 3, color:"3D3A16"),
+            Processo(nome: "P6", tempoBurst: 8, tempoBurstRestante: 8, memoria: 31, armazenamentoInicial: 0, armazenamentoFinal: 0, status: 1, prioridade: 4, ioBound: [3, 5], tempoIO: 0, tempoEspera: 0, tempoChegada: 3, color:"3D3A16"),
             Processo(nome: "P7", tempoBurst: 5, tempoBurstRestante: 5, memoria: 22, armazenamentoInicial: 0, armazenamentoFinal: 0, status: 1, prioridade: 4, ioBound: [], tempoIO: 0, tempoEspera: 0, tempoChegada: 3, color:"AC2D74"),
-            Processo(nome: "P8", tempoBurst: 4, tempoBurstRestante: 4, memoria: 6, armazenamentoInicial: 0, armazenamentoFinal: 0, status: 1, prioridade: 2, ioBound: [1], tempoIO: 0, tempoEspera: 0, tempoChegada: 5, color:"989234"),
+            Processo(nome: "P8", tempoBurst: 4, tempoBurstRestante: 4, memoria: 6, armazenamentoInicial: 0, armazenamentoFinal: 0, status: 1, prioridade: 2, ioBound: [2], tempoIO: 0, tempoEspera: 0, tempoChegada: 5, color:"989234"),
             Processo(nome: "P9", tempoBurst: 3, tempoBurstRestante: 3, memoria: 10, armazenamentoInicial: 0, armazenamentoFinal: 0, status: 1, prioridade: 1, ioBound: [], tempoIO: 0, tempoEspera: 0, tempoChegada: 6, color:"611C1F"),
             Processo(nome: "P10", tempoBurst: 2, tempoBurstRestante: 2, memoria: 15, armazenamentoInicial: 0, armazenamentoFinal: 0, status: 1, prioridade: 4, ioBound: [], tempoIO: 0, tempoEspera: 0, tempoChegada: 7, color:"4F6924")
         ]

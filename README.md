@@ -5,7 +5,9 @@ Simulador de um escalonador de processos desenvolvido para plataforma iOS (iPad)
 
 ## Ideia Geral
 O escalonador receberá 10 diferentes processos, então organizará estes em 4 filas de acordo com as prioridades já definidas pelos processos. A partir do Algoritmo Round Robin com multiplas filas de prioridade, o escalonador executará os processos respeitando o tempo de quantum de cada fila.
+
 Há possibilidade dos processos pedirem um tempo ao processador para que possam executar uma entrada ou saída (Processos IOBound). Neste caso, pré-definido no código, o tempo em que os processos que fazem essa solicitação ficaram na fila de bloqueados é de 3 unidades de tempo.
+
 Cada processo necessita de um espaço de memória para que seja executado, ou seja, este espaço fica reservado a ele enquanto desde o momento que entra em uma das filas até o momento que é finalizado definitivamente. Pré-definido no código também, a memória total para execuções é de 100K, sendo 9K já reservados para o Sistema Operacional, sendo assim 91K livres para execução.
 
 ## Recursos da Interface Gráfica
@@ -16,26 +18,33 @@ Time-Line, que representa as execuções através do tempo.
 Log, que mostra detalhadamente tudo que aconteceu em cada instante de tempo.
 
 A execução pode ser acompanhada Setp by Step (Botão com uma seta), ou verificar todo o resultado de uma única vez (Botão de play).
-
 Uma demostração ilustrativa pode ser acompanhada abaixo:
 
 **Memória - Alocação de Memória com Animação**
 ![alt text](imgDemo/memoria.gif "Memória")
+Alocação e liberação da memória
 
 **Tabelas de Filas**
 ![alt text](imgDemo/info.gif "Informações do Processo")
+Informações do processo
 ![alt text](imgDemo/bloqueado.gif "Fila de Bloqueados")
+Informações do processo na fila de bloqueados
 
 **Time-Line - Visualização com Gestos**
 ![alt text](imgDemo/gestos.gif "Visualização da Time-Line")
+A Time Line conta também com legendas para algumas execuções, como quando o processo pede tempo para IOBound, em que aparece acima da execução um relógio, identificando que naquela execução foi que o processo solicitou IOBound. Temos o mesmo cenário para a finalização de execução do processos, em que é identificada com um sinal de *check*.
 
-**Log**
+**Log de Informações**
 ![alt text](imgDemo/log.gif "Log de Informações")
+Informações sobre o que aconteceu em cada instante de tempo
 
 **Extras - Tempo Médio de Espera, Executar Rápidamente, Reiniciar**
 ![alt text](imgDemo/tempo.gif "Tempo médio de espera dos processos")
+Tempo médio de espera dos processos que foram executados
 ![alt text](imgDemo/fast.gif "Executar tudo de uma vez só")
+Executar toda o algoritmo para escalonar os processos de uma só vez
 ![alt text](imgDemo/reiniciar.gif "Reiniciar a execução dos processos")
+Reiniciar a execução
 
 ## Processos
 O escalonador recebe uma lista de 10 processos para serem executados, sendo eles:
